@@ -1,0 +1,75 @@
+/* iphne
+--------------- */
+
+@media all and (max-width:600px){
+    .logo {
+        width:20%;
+    }
+    .login {
+        font-size:20px;
+    }
+    /* top-page
+    ---------------- */
+    .top-page-title {
+        font-size:20px;
+    }
+    .infomation-contents p {
+        font-size:10px
+    }
+    .menu-bar {
+        font-size:8px;
+        top:20px;
+    }
+    .footer-contents {
+        font-size:8px;
+    }
+    .breadcrumbs-wrapper p {
+        font-size:10px;
+    }
+    .size {
+        font-size:18px;
+    }
+    .room-name {
+        font-size:20px;
+    }
+    .room-facility li {
+        font-size:14px;
+    }
+    .price-infomation {
+        font-size:10px;
+        margin-top:80px;
+    
+    }
+    .facility h2 {
+        font-size:22px;
+    }
+    .facility-list h3 {
+        font-size:14px;
+    
+    }
+    .policy h2 {
+        font-size:22px;
+    }
+    .policy-list h3{
+        font-size:14px;
+    }
+    .area-infomation h2 {
+        font-size:22px;
+    }
+    .completed-title h1{
+        font-size:22px;
+    }
+    .completed-contents {
+        font-size:10px;
+    }
+    .reservation-name {
+        font-size:10px;
+    }
+    .reservation-number {
+        font-size:15px;
+    }
+    .notes {
+   
+        font-size:8px;
+    }
+}
