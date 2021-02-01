@@ -10,9 +10,9 @@ $(function() {
     
     $(".submit-button").click(function() {
         if($(".input-form").val()== ' ') {
-            $(".mandatory").css('display',);
+            $(".mandatory").css('display','none');
         }
 
-    }
+    });
 
 });

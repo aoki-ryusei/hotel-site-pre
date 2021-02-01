@@ -215,9 +215,13 @@ header {
     margin: 50px 30px 50px 30px;
 }
 .searchResult-hotel {
-    padding-bottom:20px;
+    padding-bottom:10px;
     text-align:center;
 }
+.searchResult-hotel p{
+    color:#000;   
+}
+
 
 /* selectedHotel
 ------------------- */
@@ -231,6 +235,7 @@ header {
     margin-bottom:15px;
     border-radius: 3px;
     padding:10px;
+    
 }
 .hotel-image {
     display:grid;
@@ -238,111 +243,12 @@ header {
     grid-template-rows: repeat(2,1fr);
     grid-template-columns:repeat(3,minmax(200px,1fr));
 }
-.select-unit {
-    border:1px #000000 solid;
-    margin-bottom:15px;
-    border-radius: 3px;
-    padding:10px;
-    height:260px;
-}
-.roomimage {
-    width:30%;
-    float:left;
-}
-.room-name {
-    padding:10px;
-    margin-left:30%;
-}
-.room-facility {
-    font-size:15px;
-    height:100px;
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width:50%;
-    float:left;
-    
-}
-.room-facility li {
-    list-style:none;
-    padding:0px 5px;
-}
 .price-infomation {
     font-size:15px;
     width:20%;
-    float:right;
-    margin-top:60px;
-    
-    
-    
-}
-
-.reservation {
-    background-color:#0057B8;
-    color:#fff;
-    padding:8px 30px;
-    border-radius:3px;
-    margin-top:8px;
-    
-}
-
-.facility {
-    border:1px #000000 solid;
-    margin-bottom:15px;
-    border-radius: 3px;
-    padding:10px
-    
-}
-.facility h2 {
     float:left;
-    margin:0px 40px 0px 0px;
-}
-.facility-list {
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin:10px 0px;
-    height:200px;
-}
-.facility-list h3 {
-    list-style: none;
-    margin:10px 0px;
-
 }
 
-.policy {
-    border:1px #000000 solid;
-    margin-bottom:15px;
-    border-radius: 3px;
-    padding:10px;
-}
-.policy h2 {
-    float:left;
-    margin:0px 40px 0px 0px;
-}
-.policy-list {
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin:10px 0px;
-    height:200px;
-}    
-.area-infomation {
-    border:1px #000000 solid;
-    margin-bottom:15px;
-    border-radius: 3px;
-    padding:10px;
-}
-.area-infomation h2 {
-    float:left;
-    margin:0px 40px 0px 0px;
-}
-.review {
-    border:1px #000000 solid;
-    margin-bottom:15px;
-    border-radius: 3px;
-    padding:10px;
-}
 
 
 
