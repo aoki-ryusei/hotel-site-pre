@@ -68,11 +68,9 @@ try {
 <body>
     <header>
         <div class="header-left">
-            <img class="logo" src="./images/1200px-His_logo_blue.svg.png">
+            <a href="./Top.html"><img class="logo" src="./images/logo/1200px-His_logo_blue.svg.png"></a>
         </div>
-
-        
-
+        <div class="clear"></div>    
     </header>
 <!-- 予約完成ページ -->
     <div class="completed-main">
@@ -92,15 +90,12 @@ try {
                     <li>メールが届かない場合は、必ずメールもしくはお電話にて弊社までご連絡お願いいたします。</li>
                 </ul>
             </div>
-        
-
-
         </div><!--</completed-main-wrapper>-->
     </div><!--</main>-->
     <footer>
         <div class="footer-wrapper">
             <div class="footer-left">
-                <img class=logo src="./images/1200px-His_logo_blue.svg.png">
+            <a href="./Top.html"><img class=logo src="./images/1200px-His_logo_blue.svg.png"></a>
             </div>    
             <div class="footer-right">
                 <p class="footer-contents"><a href="https://www.his-j.com/support/guide/beginner.html">初めての方へ</a></p>

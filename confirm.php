@@ -37,8 +37,9 @@ $transportation = $_POST['transportation'];
     <!-- ヘッダー -->
     <header>
         <div class="header-left">
-            <img class="logo" src="./images/1200px-His_logo_blue.svg.png">
+        <a href="./Top.html"><img class="logo" src="./images/logo/1200px-His_logo_blue.svg.png"></a>
         </div>
+        <div class="clear"></div>
     </header>
     <div class="main">
         <div class="breadcrumbs-wrapper"> <!--ぱんくずリスト -->
@@ -47,30 +48,30 @@ $transportation = $_POST['transportation'];
         <form class="customer-infomation" method="POST" action="./procedureCompleted.php">
             <div class="reservation-person-infomation">　<!-- 予約者情報 -->
                 <h2 class="reservation-title">予約者（代表者）情報入力</h2>
-        　              <p class="resevation-subtitle">氏名（漢字）</p>
+        　              <h3 class="resevation-subtitle">氏名（漢字）</h3>
                             <input class="getForm" name="name" readonly value="<?php echo $_POST['name']; ?>">
-               　　     <p class="resevation-subtitle">氏名（カナ）</p>
+               　　     <h3 class="resevation-subtitle">氏名（カナ）</h3>
                             <input class="getForm" name="name-kana"readonly value="<?php echo $_POST['name-kana']; ?>">
-                        <p class="resevation-subtitle">性別</p>
+                        <h3 class="resevation-subtitle">性別</h3>
                             <input class="getForm" name="gender" readonly value="<?php echo $_POST['gender']; ?>">
-                        <p class="resevation-subtitle">年齢</p>
+                        <h3 class="resevation-subtitle">年齢</h3>
                             <input class="getForm" name="age" readonly value="<?php echo $_POST['age']; ?>">
-                    <h3 class="resevation-subtitle">住所</h3>
-                        <p class="resevation-minititle">郵便番号</p>
-                            <input class="getForm" name="postal-code" readonly value="<?php echo $_POST['postal-code']; ?>">
-                        <p class="resevation-minititle">都道府県</p>
-                            <input class="getForm" name="prefectures" readonly value="<?php echo $_POST['prefectures']; ?>">
-                        <p class="resevation-minititle">市区町村</p>
-                            <input class="getForm"  name="municipality" readonly value="<?php echo $_POST['municipality']; ?>">
-                        <p class="resevation-minititle">町名番地</p>
-                            <input class="getForm"  name="street" readonly value="<?php echo $_POST['street']; ?>">
-                        <p class="resevation-minititle">マンションなど</p>
-                            <input class="getForm"  name="apartment" readonly value="<?php echo $_POST['apartment']; ?>">
-                        <p class="resevation-subtitle">電話番号</h3>
+                        <h3 class="resevation-subtitle">住所</h3>
+                            <h4 class="resevation-minititle">郵便番号</h4>
+                                <input class="getForm" name="postal-code" readonly value="<?php echo $_POST['postal-code']; ?>">
+                            <h4 class="resevation-minititle">都道府県</h4>
+                                <input class="getForm" name="prefectures" readonly value="<?php echo $_POST['prefectures']; ?>">
+                            <h4 class="resevation-minititle">市区町村</h4>
+                                <input class="getForm"  name="municipality" readonly value="<?php echo $_POST['municipality']; ?>">
+                            <h4 class="resevation-minititle">町名番地</h4>
+                                <input class="getForm"  name="street" readonly value="<?php echo $_POST['street']; ?>">
+                            <h4 class="resevation-minititle">マンションなど</h4>
+                                <input class="getForm"  name="apartment" readonly value="<?php echo $_POST['apartment']; ?>">
+                        <h3 class="resevation-subtitle">電話番号</h3>
                             <input class="getForm"  name="phone-number" readonly value="<?php echo $_POST['phone-number']; ?>">
-                        <p class="resevation-subtitle">電話番号（緊急連絡先）</p>
+                        <h3 class="resevation-subtitle">電話番号（緊急連絡先）</h3>
                             <input class="getForm"  name="emergency-contact" readonly value="<?php echo $_POST['emergency-contact']; ?>">
-                        <p class="resevation-subtitle">メールアドレス</p>
+                        <h3 class="resevation-subtitle">メールアドレス</h3>
                             <input class="getForm" name="mail-address" readonly value="<?php echo $_POST['mail-address']; ?>"> 
             </div> <!--</div class="reservation-person-infomation"> -->
             <div class="checkin-infomation">

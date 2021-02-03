@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="../stylesheet.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="../responsive.css">
     <!--javascript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
@@ -19,8 +19,9 @@
     <!-- ヘッダー -->
     <header> 
         <div class="header-left">
-            <img class="logo" src="../images/1200px-His_logo_blue.svg.png">
+        <a href="../Top.html"><img class="logo" src="../images/logo/1200px-His_logo_blue.svg.png"></a>
         </div>
+        <div class="clear"></div>   
     </header>
 
     <div class="main">
@@ -33,7 +34,7 @@
                     <h2 class="reservation-title">予約者（代表者）情報入力</h2>
                         <h3 class="resevation-subtitle">氏名（漢字）</h3>
                             <input class="input-form" name="name" type="text" placeholder="山田太郎" required>
-                        <h3 class="resevation-subtitle">氏名（カナ</h3>
+                        <h3 class="resevation-subtitle">氏名（カナ)</h3>
                             <input  class="input-form" name="name-kana" type="text" placeholder="ヤマダタロウ"　required>
                         <h3 class="resevation-subtitle">性別</h3>
                             <input class="input-form" name="gender" required>
@@ -50,15 +51,15 @@
                             <p class="resevation-minititle">都道府県</p>
                                 <input class="input-form" name="prefectures" type="text" placeholder="◯◯県" required>
                             <p class="resevation-minititle">市区町村</p>
-                                <textarea class="input-form" name="municipality" type="text" required></textarea>
+                                <textarea class="input-form" name="municipality" type="text" placeholder="◯区/◯市"  required></textarea>
                             <p class="resevation-minititle">町名番地</p>
                                 <textarea class="input-form" name="street" type="text" required></textarea>
                             <p class="resevation-minititle">マンションなど</p>
                                 <textarea class="input-form" name="apartment" type="text"></textarea>
                             <h3 class="resevation-subtitle">電話番号</h3>
-                                <input class="input-form" name="phone-number" type="tel"　placeholder="000-0000-0000" required> 
+                                <input class="input-form" name="phone-number" type="tel" placeholder="000-0000-0000" required> 
                             <h3 class="resevation-subtitle">電話番号（緊急連絡先）</h3>
-                                <input class="input-form" name="emergency-contact" type="tel">
+                                <input class="input-form" name="emergency-contact" type="tel" placeholder="000-0000-0000">
                             <h3 class="resevation-subtitle">メールアドレス</h3>
                                 <input class="input-form" name="mail-address" type="email" required>
                 </div> <!--<div class="reservation-person-infomation">-->
@@ -72,14 +73,14 @@
                                 }?>
                             </select>
                         <h3 class="resevation-subtitle">宿泊施設への交通手段</h3>
-                            <input class="input-form" type="text" name="transportation" required>
+                            <input class="input-form" type="text" name="transportation"  placeholder="車/電車・バス" required>
                 </div> <!--<div class="checkin-infomation">-->
             </div> <!--<div class="customer-infomation">-->
                 <div class="consent-personal-infomation">
                     <h2 class="reservation-title">個人情報取扱についての同意</h2>
-                        <p>入力いただくお客様の個人情報は、当該旅行サービスのご案内のみに使用し、それ以外の目的で使用する事はあございません。また、お申し込みいただいた当該旅行サービスの手続きに必要な範囲内で、手配代行者に対しお客様の個人情報を提供いたします。さらに、今後のお客様のご旅行申し込みを簡素化するためにHISグループ企業とお客様の個人情報を共有する場合がございます。</p>
-                        <p>上記にご同意いただける場合は「個人情報の取り扱いについて同意します」にチェックをいれてください。</p>
-                            <p><input type="checkbox" class="personal-infomation-checkbox" required>個人情報に取り扱いについて同意します</p>
+                        <p class="consent-personal-infomation-contents">入力いただくお客様の個人情報は、当該旅行サービスのご案内のみに使用し、それ以外の目的で使用する事はあございません。また、お申し込みいただいた当該旅行サービスの手続きに必要な範囲内で、手配代行者に対しお客様の個人情報を提供いたします。さらに、今後のお客様のご旅行申し込みを簡素化するためにHISグループ企業とお客様の個人情報を共有する場合がございます。</p>
+                        <p class="checkbox-contents">上記にご同意いただける場合は「個人情報の取り扱いについて同意します」にチェックをいれてください。</p>
+                            <p class="mandatory"><input type="checkbox" class="personal-infomation-checkbox" required>個人情報に取り扱いについて同意します</p>
                 </div> <!--<div class="consent-personal-infomation">-->
                 <div class="submit-button-wrapper">
                     <input type="submit" class="submit-button" value="予約・購入情報確認へ進む">          

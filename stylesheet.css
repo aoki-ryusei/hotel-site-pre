@@ -20,19 +20,27 @@ a {
 ----------*/
 header {
     width:100%;
-    background-color:white;
-    height:auto;
-    padding: 10px 30px;
-    display:flex;
+    background-color:#fff;
+    padding: 15px 30px;
+    
 }
 
 .logo {
-    height:auto;
-    width:10%;
+    width:15%;
     
 }
+.header-left {
+    float:left;
+    width:50%;
+}
 .header-right {
+    padding-top:10px;
     float:right;
+    width:50%;
+    text-align: right;
+}
+.clear {
+    clear:both;
 }
 .login {
     font-size:2rem;
@@ -51,17 +59,16 @@ header {
 /* front
 ------------ */
 .front {
-    background-image:url(./images/japan-1366872_960_720.webp);
-    height:400px;
+    background-image:url(./images/top-images/frontImage.jpg);
+    height:600px;
     background-size:cover;
     background-position: center top;
-    background-repeat:no-repeat;
-    
+    background-repeat:no-repeat;  
 }
 /* infomation,selectPopularArea,siteseeingGuide
 ----------- */
 .main-wrapper {
-    margin: 0% 10%;
+    margin: 0% 5%;
 }
 .infomation-contents {
     text-align:center;
@@ -71,6 +78,7 @@ header {
     text-align:center;
     border-bottom:2px #0057B8 solid;
     margin-top:15px;
+    font-size:1.5rem;
 }
 .infomation-logo {
     color:#fff;
@@ -88,14 +96,12 @@ header {
     border-bottom:1px #3f3d3d solid;
     padding-bottom:5px;
     margin-bottom:5px;
+    font-size:1.0rem;
    
 }
 
 .menu-bar {
-    float:right;
-    position:relative;
-    right:10px;
-    bottom:32px;
+    margin-left:5%;
     
 }
 
@@ -105,6 +111,7 @@ header {
     display:none;
     font-size:14px;
     text-align:left;
+    
 }
 .infomation-menu-contents a {
     color:#1877f2;
@@ -145,15 +152,15 @@ header {
 
 .footer-wrapper {
     border-top:2px rgb(0,87,184) solid;
-    padding-bottom:20px;
+    padding:8px 10px 20px;
 }
 .footer-left {
     float:left;
+    width:50%;
 }
 .footer-right {
     display:flex;
     float:right; 
-    margin-top:8px;
     margin-bottom:20px;
 }
 .footer-right a {
@@ -165,11 +172,11 @@ header {
 .footer-contents {
     font-size:10px;
     margin-top:10px;
-    margin-right:10px;
+    margin-right:15px;
 }
 .size {
     font-size:2rem;
-    padding-right:10px;
+    padding-right:15px;
 }
 .line {
     color:#00B900;
@@ -193,14 +200,17 @@ header {
 }
 /*search
 ------------*/
+.breadcrumbs-wrapper {
+    margin-top:20px;
+}
 
 .breadcrumbs-wrapper p{
     padding:0px 50px;
-    font-size:15px;
+    font-size:1rem;
     text-align:center;
 }
 .breadcrumb-highlight {
-    font-size:20px;
+    font-size:1.6rem;
     color:#0057B8;
 }
 .under-bar {
@@ -217,10 +227,27 @@ header {
 .searchResult-hotel {
     padding-bottom:10px;
     text-align:center;
+    overflow:hidden;
 }
-.searchResult-hotel p{
-    color:#000;   
+.hotel:hover {
+    opacity:0.7;
+    transition:0.5s;
 }
+
+.searchResult-hotel-name {
+    color:#000; 
+    font-size:1rem; 
+    
+}
+.searchPrice {
+    font-size:1.2rem;
+    color:#d94749;
+}
+.JPY {
+    color:#000; 
+    font-size:0.8rem; 
+}
+
 
 
 /* selectedHotel
@@ -238,16 +265,35 @@ header {
     
 }
 .hotel-image {
+    margin-bottom:20px;
     display:grid;
-    gap:10px;
-    grid-template-rows: repeat(2,1fr);
-    grid-template-columns:repeat(3,minmax(200px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 }
+.img_m {
+    grid-column:1 / 3;
+    grid-row:1 / 3;
+}
+.hotel-name {
+    font-size:2.0rem;
+}
+.hotel-review {
+    font-size:1.8rem;
+}
+
 .price-infomation {
-    font-size:15px;
-    width:20%;
-    float:left;
+    font-size:1.2rem;
+    float:right;
+    margin-right:20px;
+    line-height:35px;
 }
+.reservation {
+    background-color:#0057b8;
+    color:#fff;
+    padding:8px 40px;
+    border-radius:10px;
+    float:right;
+}
+
 
 
 
@@ -266,16 +312,14 @@ header {
     padding:5px 30px;
 }
 .resevation-subtitle {
-    padding:8px 10px;
+    padding:8px 40px;
     background-color:rgba(221,221,221,0.8)
 }
 .resevation-minititle {
-    padding:2px 18px;
+    padding:2px 50px;
 }
 .mandatory {
-    margin-left:10px;
-    font-size:13px;
-    color:red;
+    color:#d94749;
       
 }
 .input-form {
@@ -303,16 +347,27 @@ header {
     border:1px #000000 solid;
     border-radius:5px;
     cursor:pointer;
-    padding:10px 20px;    
+    padding:10px 20px; 
+    margin-bottom:40px;   
 }
-.plan-code {
-    background-color:rgba(221,221,221,0.8)
+.submit-button:hover {
+    background-color:#be3e3e;
+    position:relative;
+    bottom:5px;
+    box-shadow:0px 5px 10px rgba(0,0,0,0.5) ;
 }
+
 .consent-personal-infomation {
     border:1px #000000 solid;
     margin:20px 10px;
     padding-bottom:5px;
     border-radius:10px;
+}
+.consent-personal-infomation p {
+    margin:0 20px;
+}
+.personal-infomation-checkbox {
+    margin:0 20px;
 }
 /* confirm */
 .reservation-confirmed-button-wrapper {
@@ -326,19 +381,27 @@ header {
     cursor:pointer;
     padding:10px 20px;
     margin: 30px;
-    
+ 
 }
+.reservation-confirmed-button:hover {
+    background-color:#be3e3e;
+    position:relative;
+    bottom:5px;
+    box-shadow:0px 5px 10px rgba(0,0,0,0.5) ;
+}
+
 .getForm {
     height:80px;
-    padding:5px 10px;
+    padding:5px 80px;
+    font-size:1.2rem;
 }
 
 
 /* completed */
-.completed-main-wrapper {
-    
-    padding:30px 50px 30px 50px;
 
+.completed-main-wrapper {
+    height:500px;
+    padding:30px 50px 30px 50px;
 }
 .completed-contents {
     border:3px #000000 solid;

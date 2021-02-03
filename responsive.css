@@ -3,73 +3,62 @@
 
 @media all and (max-width:600px){
     .logo {
-        width:20%;
+        width:30%;
     }
     .login {
-        font-size:20px;
+        font-size:1.2rem;
     }
     /* top-page
     ---------------- */
+    .front {
+        height:450px;
+    }
     .top-page-title {
-        font-size:20px;
+        font-size:1.5rem;
     }
     .infomation-contents p {
-        font-size:10px
+        font-size:0.1rem
     }
-    .menu-bar {
-        font-size:8px;
-        top:20px;
-    }
+    /* footer */
     .footer-contents {
-        font-size:8px;
+        font-size:0.6rem;
+        margin-right:8px;
     }
+    /* search */
+
     .breadcrumbs-wrapper p {
-        font-size:10px;
-    }
+        display:none;
+    }    
+    
     .size {
         font-size:18px;
     }
-    .room-name {
-        font-size:20px;
+    .consent-personal-infomation-contents {
+        font-size:0.8rem;
     }
-    .room-facility li {
-        font-size:14px;
+    .checkbox-contents {
+        font-size:0.8rem;
     }
-    .price-infomation {
-        font-size:10px;
-        margin-top:80px;
-    
+    /* selectedHotel */
+    .img_m {
+        grid-column:auto;
+        grid-row:auto;
     }
-    .facility h2 {
-        font-size:22px;
-    }
-    .facility-list h3 {
-        font-size:14px;
-    
-    }
-    .policy h2 {
-        font-size:22px;
-    }
-    .policy-list h3{
-        font-size:14px;
-    }
-    .area-infomation h2 {
-        font-size:22px;
-    }
+    /* procedureCompleted */
     .completed-title h1{
-        font-size:22px;
+        font-size:1.4rem;
     }
     .completed-contents {
-        font-size:10px;
+        font-size:0.8rem;
     }
     .reservation-name {
-        font-size:10px;
+        font-size:1rem;
     }
     .reservation-number {
-        font-size:15px;
+        font-size:1rem;
     }
     .notes {
    
-        font-size:8px;
+        font-size:0.6rem;
     }
 }
