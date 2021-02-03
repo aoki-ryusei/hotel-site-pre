@@ -1,4 +1,4 @@
-<!-- バックエンド -->
+
 <?php
 session_start();
 $name = $_POST['name'];
@@ -17,24 +17,22 @@ $checkInTime = $_POST['checkIn-time'];
 $transportation = $_POST['transportation'];
 ?>
 
-<!-- 　フロントエンド -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="utf-8">
     <title>hotel_sales_top</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--CSS-->
+    
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="./stylesheet.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./responsive.css">
-    <!--javascript-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 
 <body>
-    <!-- ヘッダー -->
+
     <header>
         <div class="header-left">
         <a href="./Top.html"><img class="logo" src="./images/logo/1200px-His_logo_blue.svg.png"></a>
@@ -42,11 +40,11 @@ $transportation = $_POST['transportation'];
         <div class="clear"></div>
     </header>
     <div class="main">
-        <div class="breadcrumbs-wrapper"> <!--ぱんくずリスト -->
+        <div class="breadcrumbs-wrapper"> 
             <p><span>①ホテル選択</span>.............<span>②ホテル詳細・客室選択</span>.............<span>③旅行情報入力</span>.............<span class="breadcrumb-highlight">④旅行者情報確認</span>.............<span>⑤予約手続き完了</span></p>
         </div>
         <form class="customer-infomation" method="POST" action="./procedureCompleted.php">
-            <div class="reservation-person-infomation">　<!-- 予約者情報 -->
+            <div class="reservation-person-infomation">　
                 <h2 class="reservation-title">予約者（代表者）情報入力</h2>
         　              <h3 class="resevation-subtitle">氏名（漢字）</h3>
                             <input class="getForm" name="name" readonly value="<?php echo $_POST['name']; ?>">
@@ -73,20 +71,20 @@ $transportation = $_POST['transportation'];
                             <input class="getForm"  name="emergency-contact" readonly value="<?php echo $_POST['emergency-contact']; ?>">
                         <h3 class="resevation-subtitle">メールアドレス</h3>
                             <input class="getForm" name="mail-address" readonly value="<?php echo $_POST['mail-address']; ?>"> 
-            </div> <!--</div class="reservation-person-infomation"> -->
+            </div> 
             <div class="checkin-infomation">
                 <h2 class="reservation-title" >チェックイン・交通手段の選択</h2>
                         <p class="resevation-subtitle">チェックイン時間</p>
                             <input class="getForm" name="checkIn-time" readonly value="<?php echo $_POST['checkIn-time']; ?>">
                         <p class="resevation-subtitle">宿泊施設への交通手段</p>
                             <input class="getForm" name="transportation" readonly value="<?php echo $_POST['transportation']; ?>">
-            </div> <!--</div class="checkin-infomation"> -->
-            </div> <!--</div class="plan-confirm"> -->
+            </div> 
+            </div> 
             <div class="reservation-confirmed-button-wrapper">
                 <input type="submit" class="reservation-confirmed-button" value="この内容で予約する">
             </div>
-        </form> <!--<form class="customer-infomation" method="POST" action="./procedureCompleted.php">-->
-    </div><!--</main>-->    
-    <script src="./script.js"></script>
+        </form>
+    </div>   
+
 </body>
 </html>

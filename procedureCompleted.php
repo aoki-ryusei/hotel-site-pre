@@ -1,7 +1,6 @@
-<!-- バックエンド -->
+
 <?php
 session_start();
-// sessionでデータを持ってきた
 $name = $_POST['name'];
 $nameKana = $_POST['name-kana'];
 $gender = $_POST['gender'];
@@ -48,19 +47,18 @@ try {
     exit;
 } 
 ?>
-<!-- フロントエンド -->
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="utf-8">
     <title>hotel_sales_top</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--CSS-->
+
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link rel="stylesheet" href="./stylesheet.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./responsive.css">
-    <!--javascript-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
@@ -72,7 +70,6 @@ try {
         </div>
         <div class="clear"></div>    
     </header>
-<!-- 予約完成ページ -->
     <div class="completed-main">
         <div class="completed-main-wrapper">
             <div class="completed-title">
@@ -80,22 +77,20 @@ try {
             </div>
             <div class="completed-contents">
                 <p class="reservation-name"><?php echo $name;?> 様</p>　
-                <!-- お客様のお名前（データベースから持ってくる）-->
                 <p>ご予約・ご決済ありがとうございました。これにて「旅行の確保」と「旅行契約」が成立いたしました。安心してご旅行をお楽しみ下さい。</p>
                 <p class="reservation-number" >お客様の予約No.は、「0000000000」です。</p>
-                <!-- 予約番号＝DB_ID -->
                 <p>ご登録のメールアドレスへのご完了のメールをお送りしております。必ずご確認お願いします。</p>
                 <ul class="notes">
                     <li>受信設定によっては迷惑メールボックスへ受信される事もございます。</li>
                     <li>メールが届かない場合は、必ずメールもしくはお電話にて弊社までご連絡お願いいたします。</li>
                 </ul>
             </div>
-        </div><!--</completed-main-wrapper>-->
-    </div><!--</main>-->
+        </div>
+    </div>
     <footer>
         <div class="footer-wrapper">
             <div class="footer-left">
-            <a href="./Top.html"><img class=logo src="./images/1200px-His_logo_blue.svg.png"></a>
+            <a href="./Top.html"><img class=logo src="./images/logo/1200px-His_logo_blue.svg.png"></a>
             </div>    
             <div class="footer-right">
                 <p class="footer-contents"><a href="https://www.his-j.com/support/guide/beginner.html">初めての方へ</a></p>
@@ -108,12 +103,8 @@ try {
                 <a href="https://www.instagram.com/his_japan/"><i class="fab fa-instagram size instagram"></i></a>
                 <a href="https://www.youtube.com/user/HISjapan"><i class="fab fa-youtube-square size youtube"></i></a>    
             </div>    
-        </div> <!-- </div class="footer-right"> -->
+        </div> 
     </footer>
-    
-    
-    
-    <script src="./script.js"></script>
 </body>
 
 
